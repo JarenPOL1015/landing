@@ -352,6 +352,15 @@ a {
   transform: scale(1.1); /* Aumenta un poco el tamaño al pasar el ratón */
 }
 
+/* Footer */
+
+/* Estilos opcionales para personalizar el título */
+.footer-title {
+  font-size: 1rem; /* Ajusta el tamaño según el contexto del footer */
+  font-weight: bold;
+}
+
+
 /* Efecto de Difuminado */
 .fade-in {
   opacity: 0; /* Comienza invisible */
