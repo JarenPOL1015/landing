@@ -292,6 +292,117 @@ a {
   transition: background-color 0.6s ease-out;
 }
 
+/* Aumenta el tamaño del logo */
+.logo {
+  max-height: 100px; /* Ajusta el tamaño según sea necesario */
+}
+
+/* Centra el contenido */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos de la Sección Principal */
+.main-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('media/img/Banner\ Pagina\ Asescopy.png'); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Overlay Oscuro */
+.image-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Capa oscura sobre la imagen */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Estilos para el Botón en Estado Normal */
+.btn-primary {
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave */
+}
+
+/* Efecto Hover del Botón */
+.btn-primary:hover {
+  transform: scale(1.1); /* Agranda el botón al 110% */
+  background-color: #007bff; /* Cambia a un tono de azul */
+  color: #ffffff; /* Asegura que el texto siga siendo blanco */
+}
+
+
+/* Servicios */
+
+/* Estilo para la clase service-logo */
+.service-logo {
+  max-width: 150px; /* Establece un ancho máximo en píxeles */
+  max-height: 150px; /* Establece una altura máxima en píxeles */
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+/* Efecto de hover para las imágenes */
+.service-logo:hover {
+  transform: scale(1.1); /* Aumenta un poco el tamaño al pasar el ratón */
+}
+
+/* Efecto de Difuminado */
+.fade-in {
+  opacity: 0; /* Comienza invisible */
+  animation: fadeInAnimation 1.5s ease-in-out forwards;
+}
+
+/* Definición de la Animación */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilos Responsivos */
+.main-heading {
+  font-size: 2.5rem;
+}
+
+/* Ajustes de Tamaño en Pantallas Más Pequeñas */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+  
+  .lead {
+    font-size: 1rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+.fade-in-list li {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease forwards;
+}
+.fade-in-list li:nth-child(1) { animation-delay: 0s; }
+.fade-in-list li:nth-child(2) { animation-delay: 0.2s; }
+.fade-in-list li:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes fadeIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
 /* slideshow */
 .slideshow {
   overflow: hidden;

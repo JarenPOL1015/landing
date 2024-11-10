@@ -100,7 +100,7 @@ let getData = async () => {
 
 let ready = () => {
     console.log('DOM está listo');
-    getData();
+    //getData();
 }
 
 let loaded = (eventLoaded ) => {
