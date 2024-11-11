@@ -338,20 +338,57 @@ a {
 
 /* Nosotros */
 
+/* Ajuste general de fuentes */
 .collection .element-title {
-  font-size: 1.8rem;
+  font-size: 2rem; /* Ajuste para pantallas grandes */
   font-weight: bold;
 }
 
+/* Ajuste del texto del bloque de misión y visión */
 .collection .blockquote {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.2rem; /* Tamaño de texto más grande para misión y visión */
+  line-height: 1.6;
+  word-wrap: break-word; /* Asegura que el texto se ajuste en el contenedor */
 }
 
+/* Ajuste de fuente para el título de misión y visión */
 .collection .review-title {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #6c757d;
+  text-align: center;
 }
+
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+  /* Reducción de tamaño de fuentes en pantallas pequeñas */
+  .collection .element-title {
+      font-size: 1.8rem; /* Reduce el tamaño del título en móviles */
+  }
+  .collection .blockquote {
+      font-size: 1rem;
+      line-height: 1.4;
+      padding: 0 10px; /* Reduce el padding para evitar desbordes */
+  }
+  /* Estilo para que las columnas se apilen en pantallas pequeñas */
+  .collection-item .col-md-6 {
+    width: 100%; /* Ocupa el 100% del ancho en móviles */
+    max-width: 100%; /* Asegura que no se desborde */
+  }
+
+  /* Centrado del contenido en móviles */
+  .collection-content {
+      padding: 20px;
+      text-align: center;
+  }
+
+  /* Ajuste del ancho de las imágenes */
+  .image-holder img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+}
+
 
 /* Servicios */
 
